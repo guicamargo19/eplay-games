@@ -1,5 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
+export const breakpoints = {
+  desktop: '1023px',
+  tablet: '767px'
+}
+
 export const Colors = {
   blackColor: '#111111',
   greenColor: '#10ac84',
@@ -27,5 +32,9 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 80%;
+  }
 }
 `
