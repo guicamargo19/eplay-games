@@ -3,7 +3,6 @@ import Section from '../Section'
 import play from '../../assets/botao-play.png'
 import zoom from '../../assets/mais-zoom.png'
 import closeIcon from '../../assets/close.png'
-import { GalleryItem } from '../../pages/Home'
 import * as S from './styles'
 
 type Props = {
