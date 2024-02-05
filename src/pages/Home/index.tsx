@@ -46,7 +46,7 @@ const Home = () => {
           background="gray"
         />
         <ProductsList
-          id="comming-soon"
+          id="coming-soon"
           games={soonGames}
           title="Em Breve"
           background="black"

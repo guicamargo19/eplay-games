@@ -27,5 +27,4 @@ export const ButtonLink = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
-  cursor: pointer;
 `
