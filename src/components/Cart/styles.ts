@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Colors } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 import { ButtonContainer } from '../Button/styles'
-import fechar from '../../assets/close.png'
+import closeIcon from '../../assets/close.png'
 
 export const Overlay = styled.div`
   position: absolute;
@@ -96,7 +96,7 @@ export const CartItem = styled.li`
   }
 
   button {
-    background-image: url(${fechar});
+    background-image: url(${closeIcon});
     width: 16px;
     height: 16px;
     border: none;
