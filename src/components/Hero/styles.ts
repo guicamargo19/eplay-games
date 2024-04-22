@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { Colors, breakpoints } from '../../styles'
 import { TagContainer } from '../Tag/styles'
+import { ButtonContainer } from '../Button/styles'
 
 export const Banner = styled.div`
   display: block;
   height: 480px;
   width: 100%;
   position: relative;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -27,6 +27,16 @@ export const Banner = styled.div`
     left: 0;
     content: '';
     opacity: 0.56;
+  }
+
+  ${ButtonContainer} {
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+      color: ${Colors.greenColor};
+      background-color: ${Colors.whiteColor};
+      transition: all ease-in-out 0.2s;
+    }
   }
 
   ${TagContainer} {

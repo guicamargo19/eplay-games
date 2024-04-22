@@ -7,6 +7,17 @@ export const Container = styled.div`
   padding: 32px 0;
   font-size: 14px;
   margin-top: 40px;
+
+  a {
+    color: ${Colors.whiteColor};
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+      color: ${Colors.greenColor};
+      transition: all ease-in-out 0.2s;
+    }
+  }
 `
 
 export const SectionTitle = styled.h2`

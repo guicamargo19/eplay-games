@@ -43,6 +43,7 @@ export const Group = styled.div<GroupProps>`
     height: 32px;
     padding: 0 8px;
     width: 100%;
+    outline-color: ${Colors.blackColor};
 
     &.error {
       border: 1px solid darkred;
@@ -66,6 +67,12 @@ export const TabButton = styled.button<TabButtonProps>`
   margin-right: 16px;
   padding: 0 8px;
   cursor: pointer;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 80%;
+    transition: all ease-in-out 0.2s;
+  }
 
   img {
     margin-right: 8px;

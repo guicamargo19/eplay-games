@@ -39,6 +39,13 @@ export const Sidebar = styled.aside`
   ${ButtonContainer} {
     max-width: 100%;
     width: 100%;
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+      color: ${Colors.greenColor};
+      background-color: ${Colors.whiteColor};
+      transition: all ease-in-out 0.2s;
+    }
   }
 
   .emptyText {

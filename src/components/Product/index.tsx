@@ -1,5 +1,6 @@
 import Tag from '../Tag'
 import * as S from './styles'
+import { Overlay } from './styles'
 
 type Props = {
   title: string
@@ -32,6 +33,7 @@ const Product = ({
       to={`/product/${id}`}
       title={`Clique aqui para ver mais detalhes do jogo: ${title}`}
     >
+      <Overlay></Overlay>
       <img src={image} alt={title} />
       <S.Infos>
         {infos.map((info) => (

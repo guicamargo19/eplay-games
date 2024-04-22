@@ -71,7 +71,13 @@ const Footer = () => (
           </li>
         </S.Links>
       </S.FooterSection>
-      <p>{currentYear} - &copy; EPlay - Todos os direitos reservados.</p>
+      <p>
+        {currentYear} - &copy;{' '}
+        <a href="https://portfolio-pink-omega-63.vercel.app/">
+          <strong>Portfólio Guilherme Camargo</strong>
+        </a>{' '}
+        - Todos os direitos reservados
+      </p>
     </div>
   </S.Container>
 )

@@ -3,7 +3,7 @@ import { Colors, breakpoints } from '../../styles'
 
 export const Links = styled.ul`
   display: flex;
-  margin-left: 40px;
+  margin-left: 90px;
 
   @media (max-width: ${breakpoints.tablet}) {
     margin-left: 0;
@@ -12,20 +12,38 @@ export const Links = styled.ul`
 `
 
 export const HeaderBar = styled.header`
-  background-color: ${Colors.grayColor};
-  padding: 24px;
+  padding: 12px;
   border-radius: 16px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
-  h1 {
-    line-height: 0;
+  a {
+    text-decoration: none;
   }
 
-  a,
+  h1 {
+    font-family: 'Rubik Mono One', monospace;
+    display: flex;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: ${Colors.whiteColor};
+
+    p {
+      font-family: 'Rubik Mono One', monospace;
+      color: ${Colors.greenColor};
+    }
+  }
+
+  nav a,
   span {
     color: ${Colors.whiteColor};
     font-weight: bold;
     text-decoration: none;
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+      color: ${Colors.greenColor};
+      transition: all ease-in-out 0.2s;
+    }
   }
 `
 
@@ -60,9 +78,15 @@ export const LinkItem = styled.li`
 export const CartButton = styled.span`
   display: flex;
   cursor: pointer;
+  font-family: 'Calibri', sans-serif;
+
+  span {
+    padding-left: 6px;
+  }
 
   img {
     margin-left: 16px;
+    margin-top: -4px;
   }
 
   @media (max-width: ${breakpoints.tablet}) {

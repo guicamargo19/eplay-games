@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
-import logo from '../../assets/logo.svg'
 import cartIcon from '../../assets/carrinho.svg'
 import { open } from '../../store/reducers/cart'
 import * as S from './styles'
@@ -28,7 +27,7 @@ const Header = () => {
           </S.Hamburguer>
           <Link to={'/'}>
             <h1>
-              <img src={logo} alt="ePlay" />
+              eplay <p>games</p>
             </h1>
           </Link>
           <nav>
@@ -61,7 +60,7 @@ const Header = () => {
           </nav>
         </div>
         <S.CartButton role="button" onClick={openCart}>
-          {itens.length} <span> - Produto(s)</span>
+          {itens.length} -<span>Produto(s)</span>
           <img src={cartIcon} alt="Carrinho de compras" />
         </S.CartButton>
       </S.HeaderRow>

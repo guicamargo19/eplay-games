@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { TagContainer } from '../Tag/styles'
+import { Colors } from '../../styles'
 
 export const Image = styled.div`
   width: 100%;
   display: block;
-  height: 560px;
+  height: 620px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -16,6 +17,16 @@ export const Image = styled.div`
     justify-content: space-between;
     align-items: flex-end;
     z-index: 1;
+  }
+
+  a {
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+      color: ${Colors.greenColor};
+      border-color: ${Colors.greenColor};
+      transition: all ease-in-out 0.2s;
+    }
   }
 
   ${TagContainer} {
