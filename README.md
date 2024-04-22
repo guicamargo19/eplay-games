@@ -1,12 +1,10 @@
-# ePlay
+# ePlay Games
 
 ## Apresentação do projeto
 
+https://github.com/guicamargo19/eplay/assets/133445061/2a2247c8-22a6-41f8-8186-89f4c7e4fbc2
 
-
-Projeto desenvolvido no curso de Full Stack Python da EBAC - Escola Britânica de Artes Criativas e Tecnologia.
-
-Site de Games desenvolvido em **ReactjS** com **TypeScript**, **Redux** para gerenciar o estado da aplicação,
+Site de games desenvolvido em **ReactJS** com **TypeScript**, **Redux** para gerenciar o estado da aplicação,
 estilização realizada com **Styled Components** e **React Router DOM** para navegação entre páginas, tornando esta
 uma SPA (Single Page Application).
 
@@ -14,6 +12,8 @@ Um site responsivo que permite filtrar os jogos por categoria, inserir e remover
 dados de pagamento, com feedback personalizado durante toda experiência de navegação, com criação de formulário criados
 com **Formik** e com validação e máscaras nos campos feitas com **Yup**, assim como as requisições feitas para API foi
 utilizado **React Toolkit Query**.
+
+Projeto desenvolvido no curso de Full Stack Python da EBAC - Escola Britânica de Artes Criativas e Tecnologia.
 
 ## 🚀 Começando
 
