@@ -45,6 +45,9 @@ export const HeaderBar = styled.header`
       transition: all ease-in-out 0.2s;
     }
   }
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-bottom: 20px;
+  }
 `
 
 export const NavMobile = styled.nav`
@@ -120,14 +123,20 @@ export const HeaderRow = styled.div`
   > div {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    @media (max-width: ${breakpoints.tablet}) {
-      flex: 1;
-      justify-content: space-between;
-
-      ${Links} {
-        display: none;
-      }
+    ${Links} {
+      display: none;
     }
+
+    h1 {
+      padding-right: 50px;
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    gap: 26px;
   }
 `

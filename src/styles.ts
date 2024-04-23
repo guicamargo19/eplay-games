@@ -44,8 +44,12 @@ body {
     }
   }
 
-  @media (max-width: ${breakpoints.desktop}) {
+  @media (min-width: ${breakpoints.desktop}) {
     max-width: 80%;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 90%;
   }
 }
 `

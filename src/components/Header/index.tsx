@@ -20,16 +20,16 @@ const Header = () => {
     <S.HeaderBar>
       <S.HeaderRow>
         <div>
-          <S.Hamburguer onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <span />
-            <span />
-            <span />
-          </S.Hamburguer>
           <Link to={'/'}>
             <h1>
               eplay <p>games</p>
             </h1>
           </Link>
+          <S.Hamburguer onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <span />
+            <span />
+            <span />
+          </S.Hamburguer>
           <nav>
             <S.Links>
               <S.LinkItem>

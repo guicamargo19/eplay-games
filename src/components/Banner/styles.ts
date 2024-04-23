@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { TagContainer } from '../Tag/styles'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 
 export const Image = styled.div`
   width: 100%;
@@ -26,6 +26,14 @@ export const Image = styled.div`
       color: ${Colors.greenColor};
       border-color: ${Colors.greenColor};
       transition: all ease-in-out 0.2s;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 480px;
+
+    .container {
+      padding-top: 280px;
     }
   }
 

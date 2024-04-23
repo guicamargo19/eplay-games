@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 import { HashLink as RouterLink } from 'react-router-hash-link'
 
 export const Container = styled.div`
@@ -7,6 +7,12 @@ export const Container = styled.div`
   padding: 32px 0;
   font-size: 14px;
   margin-top: 40px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    p {
+      text-align: center;
+    }
+  }
 
   a {
     color: ${Colors.whiteColor};
